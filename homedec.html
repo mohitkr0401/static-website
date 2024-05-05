@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blue Haven Decor</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #004080;
+            /* Dark blue header */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #cce5ff;
+            /* Light blue navigation bar */
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #004080;
+            /* Dark blue text for navigation links */
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #99c2ff;
+            /* Hover color for navigation links */
+            color: #fff;
+            /* Text color on hover */
+        }
+
+        .home-page {
+            background-image: url('home-bg3.jpg');
+            /* Replace 'home-background.jpg' with your image */
+            background-size: cover;
+            background-position: center;
+            filter: brightness(80%);
+            /* Increase brightness of background image */
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .home-content {
+            background-color: rgba(255, 255, 255, 0.9);
+            /* Semi-transparent white background for content */
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+        }
+
+        .form-container {
+            max-width: 400px;
+            margin: 0 auto;
+            background-color: #f0f0f0;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-container h2 {
+            margin-top: 0;
+            color: #333;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="password"],
+        .form-container input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s;
+        }
+
+        .form-container input[type="text"],
+        .form-container input[type="password"] {
+            transition: border-color 0.3s;
+        }
+
+        .form-container input[type="text"]:focus,
+        .form-container input[type="password"]:focus {
+            border-color: #007bff;
+            outline: none;
+        }
+
+        .form-container input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .form-container input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+
+        .content {
+            padding: 20px;
+            text-align: center;
+            max-width: 800px;
+            /* Set max width for the content */
+            margin: 0 auto;
+            /* Center the content horizontally */
+        }
+
+        footer {
+            background-color: #004080;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        /* Style for the products section */
+        #products {
+            text-align: center;
+        }
+
+        #products ul {
+            list-style-type: none;
+            /* Remove bullets from the list */
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        #products li {
+            margin: 10px;
+            text-align: center;
+        }
+
+        #products img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            margin-bottom: 5px;
+        }
+
+        #scroll-to-top-btn {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    z-index: 9999;
+}
+
+#scroll-to-top-btn:hover {
+    background-color: #0056b3;
+}
+
+    </style>
+
+
+</head>
+
+<body>
+
+    <header>
+        <h1>Welcome to Blue Haven Decor</h1>
+        <p>Your sanctuary for exquisite home decor</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Us</a>
+        <a href="#products">Products</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+
+    <section id="home" class="home-page">
+        <div class="home-content">
+            <h2>Login or Sign Up</h2>
+            <div class="form-container">
+                <!-- Replace the form action and method with your backend code -->
+                <form id="login-form" action="#" method="post">
+                    <input type="text" name="username" id="username" placeholder="Username" required><br>
+                    <input type="password" name="password" id="password" placeholder="Password" required><br>
+                    <input type="submit" value="Login">
+                </form>
+                <p>Don't have an account? <a href="#">Sign Up</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="content">
+        <h2>About Us</h2>
+        <p>At Blue Haven Decor, we believe that your home should reflect your unique style and personality. Our passion
+            for exceptional design drives us to curate a collection of high-quality home decor items that inspire and
+            delight.</p>
+        <p>With years of experience in the industry, our team of experts carefully selects each product to ensure it
+            meets our standards of excellence. From timeless classics to contemporary pieces, we offer a diverse range
+            of options to suit every taste and budget.</p>
+        <p>Whether you're looking to refresh a single room or transform your entire home, Blue Haven Decor is here to
+            help you create a space that feels truly yours.</p>
+    </section>
+
+    <section id="products" class="content">
+        <h2>Our Products</h2>
+        <ul>
+            <li>
+                <img src="wall.jpg" alt="Product 1">
+                <p>Wall art and decorations</p>
+            </li>
+            <li>
+                <img src="furniture.jpeg" alt="Product 2">
+                <p>Furniture and accessories</p>
+            </li>
+            <li>
+                <img src="light.jpeg" alt="Product 3">
+                <p>Lighting solutions</p>
+            </li>
+            <li>
+                <img src="rugs.jpeg" alt="Product 4">
+                <p>Textiles and rugs</p>
+            </li>
+            <li>
+                <img src="candles.jpeg" alt="Product 5">
+                <p>Home fragrance and candles</p>
+            </li>
+        </ul>
+        <p>With our curated selection of stylish and affordable items, you can effortlessly elevate every room in your
+            home.</p>
+    </section>
+
+    <section id="contact" class="content">
+        <h2>Contact Us</h2>
+        <p>If you have any questions, feedback, or inquiries, please don't hesitate to contact us:</p>
+        <p>Email: info@bluehavendecor.com</p>
+        <p>Phone: 1-800-123-4567</p>
+        <p>Address: 123 Main Street, Delhi, India</p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Blue Haven Decor. All rights reserved.</p>
+        <button id="scroll-to-top-btn">Scroll to Top</button>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
